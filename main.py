@@ -17,7 +17,14 @@ if os.getenv("OPENAI_API_KEY") is None:
 # ===============================
 #  CARGAR PRODUCTOS DESDE JSON
 # ===============================
-with open("productos.json", "r", encoding="utf-8") as f:
+# Obtener ruta absoluta del archivo main.py
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Construir ruta absoluta hacia productos.json dentro de la carpeta /chatbot
+ruta_productos = os.path.join(BASE_DIR, "chatbot", "productos.json")
+
+# Cargar productos desde JSON
+with open(ruta_productos, "r", encoding="utf-8") as f:
     productos = json.load(f)
 
 # Función para buscar info del producto
