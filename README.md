@@ -30,12 +30,22 @@ Descripción breve: Explicación en 5–7 líneas del chatbot y recomendador.
    El chatbot con IA utiliza la API de OpenAi para responder preguntas sobre productos y lee
    infromación desde un archivo productos.json y genera respuestas claras sobre precios y stock
    usando inteligencia artificial.
-   ![chatbot1](https://github.com/user-attachments/assets/9cfe08f5-ac52-4994-8699-f9cb29e08627)
-3. Sistema Recomendador (Python)
+   Comprobamos
+   imagen 1: Nos muestra una pequeña descripción de la tienda
+   ![chatbot1]<img img width="1916" height="867" alt="image" src="https://github.com/user-attachments/assets/9cfe08f5-ac52-4994-8699-f9cb29e08627"/>
+   Imagen 2: Realizamos la consulta si tiene audifonos
+   ![chatbot2]<img img width="1916" height="867" alt="image" src="https://github.com/user-attachments/assets/819d5ec2-e1c1-4645-8299-5349a4cb82d0"/>
+   
+2. Sistema Recomendador (Python)
    El sistema recomendador implementado, analiza un pequeño datset de productos y sugiere
    alternativas similares al usuario, la cual se base en técnicas de similitud para recomendar
    productos.
-<img width="1911" height="870" alt="image" src="https://github.com/user-attachments/assets/7d0a614e-18bc-4f66-a3e3-5f0cc9d57c90" />
+   Comprobamos la función
+   Imagen 1: Le decimos que nos recomienda si desemoa un teclado al usuario
+   ![recomendacion1]<img img width="1916" height="867" alt="image" src="https://github.com/user-attachments/assets/06f6be33-34a6-49d9-870b-f72c9350228d"/>
+
+   Imagen 2: Recomendación para otro usuario si desea una silla gamer
+   ![recomendacion2] <img img width="1916" height="867" alt="image" src="//github.com/user-attachments/assets/108eb80e-c686-4179-8072-c817ea669d20"/>
 
 
 PASOS PARA EJECUTAR EL PROYECTO:
