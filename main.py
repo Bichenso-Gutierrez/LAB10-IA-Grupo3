@@ -51,41 +51,64 @@ def buscar_producto(pregunta):
 {specs}
                 """
 
-    return "No encontré ese producto en el catálogo. Puedes consultar Laptop, Mouse Gamer, Audífonos Sony o Teclado Mecánico."
+    return "No encontré ese producto en el catálogo. Puedes consultar otros productos disponibles."
 
 # ===============================
 #  FUNCIÓN PRINCIPAL DEL CHAT
 # ===============================
 def obtener_respuesta(pregunta):
+    texto = pregunta.lower().strip()
+
+    # ================================
+    # 1. Manejo de saludos
+    # ================================
+    saludos = ["hola", "holi", "buenas", "buenos días", "buenas tardes", "buenas noches", "hey", "que tal", "qué tal", "hi", "hello"]
+
+    if any(s in texto for s in saludos):
+        return """
+👋 ¡Hola! ¿En qué puedo ayudarte hoy?
+Puedo darte información sobre precios, características o disponibilidad de cualquier producto del catálogo.
+"""
+
+    # ================================
+    # 2. Buscar producto en la base
+    # ================================
     info_producto = buscar_producto(pregunta)
 
-    if info_producto is None:
-        lista = "\n".join([f"- {p['nombre']}" for p in productos])
+    if "No encontré ese producto" in info_producto:
+        lista = "\n".join([f"• {p['nombre']}" for p in productos])
         return f"""
-❌ No encontré ese producto en el catálogo.
-📦 Estos son los productos disponibles:
+😕 No encontré ese producto en nuestro catálogo.
+
+Aquí tienes lo que tenemos disponible ahora mismo:
 
 {lista}
 
-Pregunta por uno de la lista (por ejemplo: "Precio del Mouse Gamer RGB").
+✨ Si deseas, pregúntame por uno en específico.
+Ejemplo: _"¿Qué precio tiene el Mouse Gamer RGB?"_
 """
 
-    # llamar al modelo para mejorar la redacción
+    # ================================
+    # 3. Si se encontró el producto → generar respuesta amigable
+    # ================================
     respuesta = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
             {
                 "role": "system",
                 "content": """
-Eres un chatbot de TIENDA VIRTUAL.
-Debes responder basándote exclusivamente en la información JSON proporcionada.
-NO inventes productos, precios ni características.
-Tu misión es explicar la información del producto de manera clara y amable.
+Eres un chatbot amable y profesional de una tienda virtual.
+Responde utilizando SOLO la información del JSON.
+Sé cálido, útil y directo. No inventes datos.
 """
             },
             {
                 "role": "user",
-                "content": f"Pregunta del cliente: {pregunta}\n\nInformación del producto:\n{info_producto}"
+                "content": (
+                    f"El cliente pregunta: {pregunta}\n\n"
+                    f"Información del producto:\n{info_producto}\n\n"
+                    "Redáctalo de forma amigable."
+                )
             }
         ]
     )
@@ -93,11 +116,39 @@ Tu misión es explicar la información del producto de manera clara y amable.
     return respuesta.choices[0].message.content
 
 
+
+
 # ===============================
 #  INTERFAZ TIPO CHAT
 # ===============================
 st.set_page_config(page_title="ChatBot de Tienda Virtual", page_icon="🛒")
-st.title("🛒 ChatBot de Catálogo – Comercio Electrónico")
+st.title("🛒 ChatBot de Catálogo – Mi Tienda Virtual")
+
+
+# ===============================
+# MENSAJE DE BIENVENIDA AUTOMÁTICO
+# ===============================
+if "bienvenida" not in st.session_state:
+    with st.chat_message("assistant"):
+        st.write("""
+👋 ¡Hola! Bienvenido a **Mi Tienda Virtual**.
+
+Estoy aquí para ayudarte a encontrar:
+- precios  
+- características técnicas  
+- disponibilidad  
+- productos similares  
+
+Puedes preguntarme algo como:
+👉 *"¿Qué precio tiene la Laptop Lenovo i5?"*  
+👉 *"Muéstrame las características del Mouse Gamer RGB"*  
+👉 *"¿Tienes audífonos?"*
+
+¿En qué puedo ayudarte hoy? 😊
+""")
+    st.session_state.bienvenida = True
+
+
 
 # Historial
 if "mensajes" not in st.session_state:

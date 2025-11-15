@@ -30,7 +30,7 @@
   },
   {
     "id": 3,
-    "nombre": "Audífonos Sony WH-CH520",
+    "nombre": "Audífonos Sony WH-CH520",  
     "categoria": "Audio",
     "precio": 220,
     "stock": 15,
