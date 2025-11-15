@@ -25,12 +25,12 @@ Tecnologías utilizadas:
   - Intents
   - Entities
   - Simulador de Dialogflow
-Descripción breve:
-Explicación en 5–7 líneas del chatbot y recomendador.
+Descripción breve: Explicación en 5–7 líneas del chatbot y recomendador.
 1. Chatbot con IA (Python + OpenAI)
    El chatbot con IA utiliza la API de OpenAi para responder preguntas sobre productos y lee
    infromación desde un archivo productos.json y genera respuestas claras sobre precios y stock
    usando inteligencia artificial.
+   ![chatbot1](https://github.com/user-attachments/assets/9cfe08f5-ac52-4994-8699-f9cb29e08627)
 3. Sistema Recomendador (Python)
    El sistema recomendador implementado, analiza un pequeño datset de productos y sugiere
    alternativas similares al usuario, la cual se base en técnicas de similitud para recomendar
