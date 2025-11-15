@@ -52,7 +52,9 @@ PASOS PARA EJECUTAR EL PROYECTO:
 ABRIR NUEVA TERMINAL Y EJECUTAR LOS SIGUIENTES COMANDOS EN ORDEN:
 
 python.exe -m pip install --upgrade pip
+
 .venv\Scripts\activate
+
 streamlit run main.py
 
 
