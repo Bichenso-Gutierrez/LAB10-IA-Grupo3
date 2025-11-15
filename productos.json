@@ -1,0 +1,265 @@
+[
+  {
+    "id": 5,
+    "nombre": "Laptop HP Pavilion Ryzen 5",
+    "categoria": "Laptops",
+    "precio": 2800,
+    "stock": 8,
+    "especificaciones": {
+      "procesador": "AMD Ryzen 5 5600H",
+      "ram": "16GB DDR4",
+      "almacenamiento": "512GB SSD",
+      "pantalla": "15.6'' Full HD 144Hz",
+      "grafica": "NVIDIA GTX 1650",
+      "sistema_operativo": "Windows 11"
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Monitor LG UltraWide 29''",
+    "categoria": "Monitores",
+    "precio": 950,
+    "stock": 20,
+    "especificaciones": {
+      "resolucion": "2560x1080",
+      "tipo_pantalla": "IPS",
+      "frecuencia": "75Hz",
+      "puertos": "HDMI, DisplayPort",
+      "relacion_aspecto": "21:9"
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "SSD Kingston NV2 1TB",
+    "categoria": "Almacenamiento",
+    "precio": 310,
+    "stock": 25,
+    "especificaciones": {
+      "tipo": "NVMe M.2",
+      "lectura": "3500 MB/s",
+      "escritura": "2100 MB/s",
+      "compatibilidad": "PCIe 4.0"
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Memoria RAM Corsair Vengeance 16GB",
+    "categoria": "Componentes",
+    "precio": 280,
+    "stock": 35,
+    "especificaciones": {
+      "tipo": "DDR4",
+      "velocidad": "3200 MHz",
+      "latencia": "CL16",
+      "voltaje": "1.35V"
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Parlantes Logitech Z333",
+    "categoria": "Audio",
+    "precio": 160,
+    "stock": 18,
+    "especificaciones": {
+      "potencia": "80W",
+      "subwoofer": "Incluido",
+      "conectividad": "Auxiliar 3.5mm",
+      "control_volumen": "Sí"
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Impresora Epson EcoTank L3250",
+    "categoria": "Impresoras",
+    "precio": 750,
+    "stock": 10,
+    "especificaciones": {
+      "tipo": "Multifuncional",
+      "conexion": "WiFi",
+      "tecnologia": "Sistema de tinta continua EcoTank",
+      "funciones": "Imprime, copia, escanea"
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "Router TP-Link Archer AX23",
+    "categoria": "Redes",
+    "precio": 190,
+    "stock": 30,
+    "especificaciones": {
+      "tecnologia": "WiFi 6",
+      "velocidad": "1800 Mbps",
+      "bandas": "Dual Band",
+      "puertos": "4 LAN, 1 WAN"
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "Teclado Logitech K380 Bluetooth",
+    "categoria": "Periféricos",
+    "precio": 120,
+    "stock": 28,
+    "especificaciones": {
+      "conexion": "Bluetooth",
+      "compatibilidad": "Windows, Android, iOS, Mac",
+      "autonomia": "Hasta 2 años",
+      "peso": "423g"
+    }
+  },
+  {
+    "id": 13,
+    "nombre": "Mouse Inalámbrico Logitech M185",
+    "categoria": "Periféricos",
+    "precio": 45,
+    "stock": 50,
+    "especificaciones": {
+      "conexion": "USB inalámbrico",
+      "autonomia": "12 meses",
+      "dpi": "1000 DPI"
+    }
+  },
+  {
+    "id": 14,
+    "nombre": "Audífonos JBL Tune 510BT",
+    "categoria": "Audio",
+    "precio": 180,
+    "stock": 25,
+    "especificaciones": {
+      "tipo": "Bluetooth",
+      "bateria": "40 horas",
+      "carga_rapida": "5 min = 2 horas",
+      "peso": "160g"
+    }
+  },
+  {
+    "id": 15,
+    "nombre": "Smartwatch Amazfit Bip U",
+    "categoria": "Wearables",
+    "precio": 190,
+    "stock": 14,
+    "especificaciones": {
+      "pantalla": "1.43'' TFT",
+      "sensores": "SpO2, ritmo cardíaco",
+      "bateria": "9 días",
+      "resistencia_agua": "5 ATM"
+    }
+  },
+  {
+    "id": 16,
+    "nombre": "Cámara Web Logitech C920",
+    "categoria": "Video",
+    "precio": 220,
+    "stock": 12,
+    "especificaciones": {
+      "resolucion": "1080p",
+      "microfonos": "Estéreo",
+      "fps": "30fps",
+      "conexion": "USB"
+    }
+  },
+  {
+    "id": 17,
+    "nombre": "Disco Duro Externo Seagate 2TB",
+    "categoria": "Almacenamiento",
+    "precio": 260,
+    "stock": 22,
+    "especificaciones": {
+      "tipo": "HDD",
+      "conexion": "USB 3.0",
+      "velocidad": "120 MB/s",
+      "compatibilidad": "Windows / Mac"
+    }
+  },
+  {
+    "id": 18,
+    "nombre": "Laptop Acer Aspire 5 i7",
+    "categoria": "Laptops",
+    "precio": 3400,
+    "stock": 6,
+    "especificaciones": {
+      "procesador": "Intel Core i7 12va Generación",
+      "ram": "16GB DDR4",
+      "almacenamiento": "1TB SSD",
+      "pantalla": "15.6'' Full HD",
+      "grafica": "Intel Iris Xe"
+    }
+  },
+  {
+    "id": 19,
+    "nombre": "MicroSD Samsung EVO 128GB",
+    "categoria": "Almacenamiento",
+    "precio": 55,
+    "stock": 60,
+    "especificaciones": {
+      "velocidad_lectura": "100 MB/s",
+      "velocidad_escritura": "60 MB/s",
+      "clase": "Clase 10 U3 V30",
+      "incluye_adaptador": "Sí"
+    }
+  },
+  {
+    "id": 20,
+    "nombre": "Tablet Lenovo M10 HD",
+    "categoria": "Tablets",
+    "precio": 620,
+    "stock": 11,
+    "especificaciones": {
+      "pantalla": "10.1'' HD",
+      "ram": "4GB",
+      "almacenamiento": "64GB",
+      "bateria": "Hasta 8 horas",
+      "sistema_operativo": "Android"
+    }
+  },
+  {
+    "id": 21,
+    "nombre": "Silla Gamer Cougar Explore",
+    "categoria": "Accesorios",
+    "precio": 750,
+    "stock": 8,
+    "especificaciones": {
+      "material": "Cuero PU",
+      "peso_maximo": "120kg",
+      "reposabrazos": "Ajustables 2D",
+      "inclinacion": "155°"
+    }
+  },
+  {
+    "id": 22,
+    "nombre": "Monitor Samsung 24'' 75Hz",
+    "categoria": "Monitores",
+    "precio": 520,
+    "stock": 18,
+    "especificaciones": {
+      "resolucion": "1920x1080",
+      "tipo_pantalla": "VA",
+      "frecuencia": "75Hz",
+      "puertos": "HDMI"
+    }
+  },
+  {
+    "id": 23,
+    "nombre": "Cargador Portátil Xiaomi 20000mAh",
+    "categoria": "Accesorios",
+    "precio": 140,
+    "stock": 40,
+    "especificaciones": {
+      "puertos": "USB-A, USB-C",
+      "carga_rapida": "18W",
+      "tipo_bateria": "Li-Po"
+    }
+  },
+  {
+    "id": 24,
+    "nombre": "Micrófono HyperX SoloCast",
+    "categoria": "Audio",
+    "precio": 260,
+    "stock": 9,
+    "especificaciones": {
+      "tipo": "USB",
+      "patron_polar": "Cardioide",
+      "frecuencia": "20Hz–20kHz",
+      "boton_mute": "Sí"
+    }
+  }
+]
