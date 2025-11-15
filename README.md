@@ -13,7 +13,7 @@ Entregables:
 3. Video explicativo
 
 Enlace del video:
-https://youtu.be/xxxxxxx (modo oculto)
+https://youtu.be/C6Gj9eTVOiE (modo oculto)
 
 Tecnologías utilizadas:
 1. Chatbot con IA (Python + OpenAI)
