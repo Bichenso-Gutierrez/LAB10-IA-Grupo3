@@ -52,13 +52,13 @@ PASOS PARA EJECUTAR EL PROYECTO:
 ABRIR NUEVA TERMINAL Y EJECUTAR LOS SIGUIENTES COMANDOS EN ORDEN:
 
 python.exe -m pip install --upgrade pip
-
-.venv\Scripts\activate 
-
+.venv\Scripts\activate
 streamlit run main.py
 
 
-IMAGENES DEL PROYECTO REALIZADO
+IMAGENES DEL PROYECTO REALIZADO EN DIALOG FLOW
+
+
 <img width="1911" height="870" alt="image" src="https://github.com/user-attachments/assets/7d0a614e-18bc-4f66-a3e3-5f0cc9d57c90" />
 <img width="1918" height="872" alt="image" src="https://github.com/user-attachments/assets/187c42df-f880-442c-8d42-323b0d8c3600" />
 
