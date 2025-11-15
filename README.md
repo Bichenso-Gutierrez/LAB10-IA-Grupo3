@@ -4,7 +4,7 @@ Grupo 3
 Integrantes:
 - Escalante Pablo Lucy              27202301
 - Fernandez Cardenas, Luis Albert   27210503
-- Gomez Prado, Roy Brayam           2720
+- Gomez Prado, Roy Brayam           27202116
 - Gutierrez Sosa, Bichenso Ranses   27210127
   
 Entregables:
@@ -43,7 +43,7 @@ ABRIR NUEVA TERMINAL Y EJECUTAR LOS SIGUIENTES COMANDOS EN ORDEN:
 
 python.exe -m pip install --upgrade pip
 
-.venv\Scripts\activate
+.venv\Scripts\activate 
 
 streamlit run main.py
 
