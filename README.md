@@ -39,11 +39,10 @@ Explicación en 5–7 líneas del chatbot y recomendador.
 
 
 PASOS PARA EJECUTAR EL PROYECTO:
-ABRIR NUEVA TERMINAL Y EJECUTAR EL SIGUIENTE COMANDO:
+ABRIR NUEVA TERMINAL Y EJECUTAR LOS SIGUIENTES COMANDOS EN ORDEN:
 
 python.exe -m pip install --upgrade pip
 
-SIGUIENTE COMANDO:
+.venv\Scripts\activate
 
-
-
+streamlit run main.py
