@@ -45,7 +45,7 @@ Descripción breve: Explicación en 5–7 líneas del chatbot y recomendador.
    ![recomendacion1]<img img width="1916" height="867" alt="image" src="https://github.com/user-attachments/assets/06f6be33-34a6-49d9-870b-f72c9350228d"/>
 
    Imagen 2: Recomendación para otro usuario si desea una silla gamer
-   ![recomendacion2] <img img width="1916" height="867" alt="image" src="//github.com/user-attachments/assets/108eb80e-c686-4179-8072-c817ea669d20"/>
+   ![recomendacion2]<img img width="1916" height="867" alt="image" src="https://github.com/user-attachments/assets/108eb80e-c686-4179-8072-c817ea669d20"/>
 
 
 PASOS PARA EJECUTAR EL PROYECTO:
