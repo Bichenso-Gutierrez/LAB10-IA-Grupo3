@@ -25,6 +25,7 @@ Tecnologías utilizadas:
   - Intents
   - Entities
   - Simulador de Dialogflow
+  - 
 Descripción breve: Explicación en 5–7 líneas del chatbot y recomendador.
 1. Chatbot con IA (Python + OpenAI)
    El chatbot con IA utiliza la API de OpenAi para responder preguntas sobre productos y lee
